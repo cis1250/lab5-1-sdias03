@@ -24,3 +24,15 @@ def is_sentence(text):
         return False
 
     return True
+
+# Function to get and validate user input
+def get_sentence():
+    while True:
+        sentence = input("Enter a sentence: ")
+        if is_sentence(sentence):
+            return sentence
+        else:
+            print("Invalid sentence. Sentence should start with a capital letter and end with a punctuation.")
+
+
+# Function to calculate word frequencies
