@@ -1,9 +1,14 @@
 #!/usr/bin/env python3
 
+
+# Fibonacci Sequence Exercise with functions
+# TODO: (Read detailed instructions in the Readme file)
+
 print("Fibonacci! scuzi, babbada boopi? babbada boopi? bibadda boopada babada babada!\nWelcome to the Fibonacci Sequence generator!\n\n")
 
 n = 0
 
+# Function for getting the correct user input
 def user_input():
   while True:
     try:
@@ -17,7 +22,7 @@ def user_input():
   return n
 
 
-
+# Function for generating the sequence as a list
 def fibonacci_sequence(n):
   sequence = []
   a, b = 0, 1
@@ -27,16 +32,13 @@ def fibonacci_sequence(n):
     a, b = b, a + b
   return sequence
 
+# Function to print the sequence
 def print_sequence(sequence):
   print("Fibonacci Sequence:")
   print(" ".join(map(str, sequence)))
   
 
+# Using all the functions in 3 lines to finish the program
 n = user_input()
 sequence = fibonacci_sequence(n)
 print_sequence(sequence)
-
-
-
-# Fibonacci Sequence Exercise with functions
-# TODO: (Read detailed instructions in the Readme file)
