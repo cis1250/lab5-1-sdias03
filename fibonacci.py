@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-print("Fibonacci! scuzi, babbada boopi? babbada boopi? bibadda boopada babada babada!")
+print("Fibonacci! scuzi, babbada boopi? babbada boopi? bibadda boopada babada babada!\nWelcome to the Fibonacci Sequence generator!\n\n")
 
 n = 0
 
