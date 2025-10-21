@@ -19,15 +19,22 @@ def user_input():
 
 
 def fibonacci_sequence(n):
+  sequence = []
   a, b = 0, 1
-  print("Fibonacci sequence: ")
-
+  
   for i in range(n):
-    print(a, end= " ")
+    sequence.append(a)
     a, b = b, a + b
+  return sequence
+
+def print_sequence(sequence):
+  print("Fibonacci Sequence:")
+  print(" ".join(map(str, sequence)))
+  
 
 n = user_input()
-fibonacci_sequence(n)
+sequence = fibonacci_sequence(n)
+print_sequence(sequence)
 
 
 
